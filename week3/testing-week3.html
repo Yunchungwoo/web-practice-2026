@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3주차</title>
+    <meta property="og:url" content="https://example.com/page.html">
+</head>
+<body>
+    <h1>a 태그</h1>
+    <a href="" target="_blank"></a>
+    <a href="tel:010-0000-0000">전화걸기</a>
+    <a href="mailto:iuci5st23@gmail.com">이메일보내기</a>
+    <a href="#1">오디오 태그로 이동</a>
+    <a href="#2">비디오 태그로 이동</a>
+
+    <h1>이미지 태그</h1>
+    <!-- img 는 alt 속성 지정 필수 >> 웹 접근성 -->
+    <img src="testimg.jpg" alt="자몽 이미지 절대경로 지정">
+    <img src="./testimg.jpg" alt="자몽 이미지 상대경로 지정">
+    <img src="https://b855f26a-3ae4-4e1f-b688-4a75e9c7ff4e.mdnplay.dev/shared-assets/images/examples/grapefruit-slice.jpg" alt="자몽 이미지 웹주소 지정">
+
+    <h1 id="1">오디오 태그</h1>
+    <audio src="https://9e11ffe7-7196-4f02-b9cf-36ef875d72ac.mdnplay.dev/shared-assets/audio/t-rex-roar.mp3" controls></audio>
+
+    <h1 id="2">비디오 태그</h1>
+    <video src="https://0fc7130c-baaa-41a1-bcc5-e555200a1880.mdnplay.dev/shared-assets/videos/flower.webm" type="video/webm" controls></video>
+
+    <h1>폼태그</h1>
+    <form>
+        <fieldset>
+            <legend>인풋태그</legend>
+            <label for="id">아이디</label>
+            <input type="text" id="id" />
+
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" />
+
+            <label for="email">이메일</label>
+            <input type="email" id="email" />
+
+            <label for="tel">전화번호</label>
+            <input type="tel" id="tel" />
+
+            <h2>체크박스</h2>
+            <label for="1">1</label>
+            <input type="checkbox" id="1" />
+            <label for="2">2</label>
+            <input type="checkbox" id="2" />
+            <label for="3">3</label>
+            <input type="checkbox" id="3" />
+
+            <h2>라디오 1개만 선택</h2>
+            <label for="apple">사과</label>
+            <input type="radio" name="fruit" id="apple" />
+            <label for="banana">바나나</label>
+            <input type="radio" name="fruit" id="banana" />
+            <label for="grape">포도</label>
+            <input type="radio" iname="fruit" id="grape" />
+
+            <h2>파일 </h2>
+            <input type="file" />
+
+            <h2>기타 요소</h2>
+            <label for="1">작성내용</label>
+            <textarea id="1"></textarea>
+
+            <label for="2">요청사항</label>
+            <select id="2">
+                <option value="a">배송</option>
+                <option value="b" selected>주문</option>
+                <option value="c">기타</option>
+            </select>
+
+            <Button type="button">버튼</Button>
+        </fieldset>
+    </form>
+</body>
+</html>
