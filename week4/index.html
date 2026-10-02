@@ -19,87 +19,76 @@
           height: auto;
         }
 
-        html {
+        body {
           background-color: black;
           color: white;
-          padding: 20px;
+          padding: 25px;
+          font-family: "Noto Sans KR", sans-serif;
+          font-optical-sizing: auto;
+        }
+
+        header > span {
+          font-size: 1em;
+          font-style: italic;
         }
 
         .intro-section {
-          margin-top: 1em;
-          margin-bottom: 1em;
+          margin: 2em auto;
+          line-height: 1.5;
+          font-style: normal;
         }
 
         .intro-section > p {
-          margin-top: 1em;
-          line-height: 1.5;
-          font-family: "Noto Sans KR", sans-serif;
-          font-optical-sizing: auto;
+          padding: .5em 0;
           font-weight: 100;
-          font-style: normal;
         }
 
-          .intro-section strong {
-          margin-top: 1em;
+        .intro-section strong {
           line-height: 1.5;
-          font-family: "Noto Sans KR", sans-serif;
-          font-optical-sizing: auto;
           font-weight: 500;
-          font-style: normal;
         }
 
         .font-family-section {
-          margin-top: 1em;
-          margin-bottom: 1em;
+          margin: 1em auto;
+          font-style: normal;
         }
 
-        .font-family-section > ul, li{
-          line-height: 1.5;
-        }
-
-        .font-family-section > ul {
-          margin-top: 1em;
-          margin-bottom: 1em;
+        .font-family-section ul, 
+        .font-family-section li {
+          margin: .5em;
+          line-height: 1.6;
         }
 
         .font-family-section em {
-          font-family: "Noto Sans KR", sans-serif;
-          font-optical-sizing: auto;
           font-weight: 500;
-          font-style: normal;
         }
 
         .table-style {
           border: 1px solid white;
-          margin-top: 1em;
-          margin-bottom: 1em;
-          padding: 1em;
+          width: 40rem;
+          height: 70px;
+          margin: 1em 1em;
           font-style: normal;
           text-align: center;
+          border-collapse: collapse;
         }
 
-        .table-style > thead > th {
-          font-family: "Noto Sans KR", sans-serif;
-          font-optical-sizing: auto;
+        .table-style th,
+        .table-style td {
+          border: 1px solid white;
+          padding: 10px;
           font-size: 100%;
           font-weight: 100;
           text-align: center;
         }
 
-        .table-style > tbody > tr {
-          padding: 1em;
-          font-family: "Noto Sans KR", sans-serif;
-          font-optical-sizing: auto;
-          font-size: 100%;
-          font-weight: 100;
+        .table-style th {
+          font-weight: 500;
         }
 
         footer {
-          font-family: "Noto Sans KR", sans-serif;
-          font-optical-sizing: auto;
           font-size: 100%;
           font-weight: 100;
-          text-align: center;
         }
     </style>
   </head>
