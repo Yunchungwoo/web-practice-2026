@@ -1,0 +1,41 @@
+header {
+    position: sticky;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+header > nav > ul > li {
+    display: inline-block;
+    right: 10px;
+}
+
+.section1 {
+    background: linear-gradient(to left, black, white);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section2 {
+    position: relative;
+}
+
+.section2 > ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+}
+
+.section2 > ul > li > strong, span {
+    display: block;
+}
+
+.section2 > ul > li > .badge {
+    position: absolute;
+    color: white;
+    margin: 10px;
+}
