@@ -1,153 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h1, p {
-            margin: 20px auto;
-        }
-
-        .sphere1 {
-            z-index: 0;
-            margin-left: 50%;
-            width: 100px;
-            height: 100px;
-            background: linear-gradient(white, aqua);
-            border-radius: 100px;
-            animation: 2s infinite linear sphere-move;
-        }
-
-        .sphere2 {
-            z-index: 1;
-            width: 50px;
-            height: 50px;
-            border-radius: 100px;
-        }
-
-        .card-table {
-            margin-top: 200px;
-            width : 100%;
-            display: grid;
-            justify-items: center;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            box-shadow: 20%;
-        }
-
-        .cardbox1, .cardbox2, .cardbox3, .cardbox4 {
-            border: 1px solid black;
-            transition: all 1s;
-        }
-
-        .cardbox1 {
-            animation: 2s forwards move;
-        }
-
-        .cardbox2 {
-            animation: 2s .5s forwards move;
-        }
-
-        .cardbox3 {
-            animation: 2s 1s forwards move;
-        }
-
-        .cardbox4 {
-            animation: 2s 1.5s forwards move;
-        }
-
-        .cardbox1:hover, .cardbox2:hover, .cardbox3:hover, .cardbox4:hover {
-            transform: scale(1.1);
-            overflow: hidden;
-        }
-
-        .cardbox p, .button {
-            margin-left: 10px;
-        }
-
-        .cardbox > img {
-            background-size: cover;
-        }
-
-        .cardbox > .cardbox-title {
-            font-weight: bold;
-            font-size: 20px;
-        }
-
-        .button {
-            width: 40%;
-            height: 30px;
-            border-radius: 5px;
-            background-color: skyblue;
-            color: white;
-            font-weight: bold;
-            align-items: center;
-            text-align: center;
-            transition: all 1s;
-        }
-
-        .button:active {
-            transform: scale(0.95);
-        }
-
-        @keyframes move {
-            0% {
-                transform: translate(0, 0);
-                opacity: 0%;
-            }
-            100% {
-                transform: translate(0, -100px);
-                opacity: 100%;
-            }
-        }
-
-        @keyframes sphere-move {
-            0% {
-                transform: rotate(0);
-            }
-            100% {
-                transform: totate(100deg);
-            }
-        }
-
-
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7주차 실습 - 카드 컬렉션</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="header">
     <h1>My Card Collection</h1>
-    <p>transform · transition · tanimation 실습</p>
+    <p>transform · transition · animation 실습</p>
+  </header>
 
-    <div class="sphere1">
-        <div class="sphere2"></div>
-    </div>
+  <section class="loading">
+    <div class="spinner"></div>
+    <p>Loading...</p>
+  </section>
 
-    <!-- 카드 메인 -->
-     <div class="card-table">
-        <div class="cardbox1">
-            <img src="https://placehold.co/250x200" alt="card image1">
-            <p class="cardbox-title">Card 1</p>
-            <p>카드에 대한 짧은 설명이 들어갑니다.</p>
-            <div class="button">자세히 보기</div>
-        </div>
-        <div class="cardbox2">
-            <img src="https://placehold.co/250x200" alt="card image2">
-            <p class="cardbox-title">Card 1</p>
-            <p>카드에 대한 짧은 설명이 들어갑니다.</p>
-            <div class="button">자세히 보기</div>
-        </div>
-        <div class="cardbox3">
-            <img src="https://placehold.co/250x200" alt="card image3">
-            <p class="cardbox-title">Card 1</p>
-            <p>카드에 대한 짧은 설명이 들어갑니다.</p>
-            <div class="button">자세히 보기</div>
-        </div>
-        <div class="cardbox4">
-            <img src="https://placehold.co/250x200" alt="card image4">
-            <p class="cardbox-title">Card 1</p>
-            <p>카드에 대한 짧은 설명이 들어갑니다.</p>
-            <div class="button">자세히 보기</div>
-        </div>
-     </div>
+  <main class="card-list">
+    <article class="card">
+      <div class="card-img">
+        <img src="https://picsum.photos/seed/card1/400/300" alt="카드 1 이미지">
+      </div>
+      <div class="card-body">
+        <h2>Card 1</h2>
+        <p>카드에 대한 짧은 설명이 들어갑니다.</p>
+        <button type="button" class="btn">자세히 보기</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-img">
+        <img src="https://picsum.photos/seed/card2/400/300" alt="카드 2 이미지">
+      </div>
+      <div class="card-body">
+        <h2>Card 2</h2>
+        <p>카드에 대한 짧은 설명이 들어갑니다.</p>
+        <button type="button" class="btn">자세히 보기</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-img">
+        <img src="https://picsum.photos/seed/card3/400/300" alt="카드 3 이미지">
+      </div>
+      <div class="card-body">
+        <h2>Card 3</h2>
+        <p>카드에 대한 짧은 설명이 들어갑니다.</p>
+        <button type="button" class="btn">자세히 보기</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="card-img">
+        <img src="https://picsum.photos/seed/card4/400/300" alt="카드 4 이미지">
+      </div>
+      <div class="card-body">
+        <h2>Card 4</h2>
+        <p>카드에 대한 짧은 설명이 들어갑니다.</p>
+        <button type="button" class="btn">자세히 보기</button>
+      </div>
+    </article>
+  </main>
 </body>
 </html>
