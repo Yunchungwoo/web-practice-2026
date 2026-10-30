@@ -5,26 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .body {
-            justify-content: center;
-            align-items: center;
+        h1, p {
+            margin: 20px auto;
         }
-        .sphere1, .sphere2 {
-            position: relative;
+
+        .sphere1 {
+            z-index: 0;
+            margin-left: 50%;
             width: 100px;
             height: 100px;
-            background-color: aqua;
+            background: linear-gradient(white, aqua);
+            border-radius: 100px;
+            animation: 2s infinite linear sphere-move;
         }
+
+        .sphere2 {
+            z-index: 1;
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+        }
+
         .card-table {
-            margin-top: 300px;
+            margin-top: 200px;
             width : 100%;
             display: grid;
             justify-items: center;
             grid-template-columns: repeat(4, 1fr);
             gap: 20px;
+            box-shadow: 20%;
         }
 
-        .cardbox {
+        .cardbox1, .cardbox2, .cardbox3, .cardbox4 {
             border: 1px solid black;
             transition: all 1s;
         }
@@ -44,7 +56,8 @@
         .cardbox4 {
             animation: 2s 1.5s forwards move;
         }
-        .cardbox:hover {
+
+        .cardbox1:hover, .cardbox2:hover, .cardbox3:hover, .cardbox4:hover {
             transform: scale(1.1);
             overflow: hidden;
         }
@@ -71,6 +84,11 @@
             font-weight: bold;
             align-items: center;
             text-align: center;
+            transition: all 1s;
+        }
+
+        .button:active {
+            transform: scale(0.95);
         }
 
         @keyframes move {
