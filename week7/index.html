@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            justify-content: center;
+            align-items: center;
+        }
+        .sphere1, .sphere2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+        .card-table {
+            margin-top: 300px;
+            width : 100%;
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .cardbox {
+            border: 1px solid black;
+            transition: all 1s;
+        }
+
+        .cardbox1 {
+            animation: 2s forwards move;
+        }
+
+        .cardbox2 {
+            animation: 2s .5s forwards move;
+        }
+
+        .cardbox3 {
+            animation: 2s 1s forwards move;
+        }
+
+        .cardbox4 {
+            animation: 2s 1.5s forwards move;
+        }
+        .cardbox:hover {
+            transform: scale(1.1);
+            overflow: hidden;
+        }
+
+        .cardbox p, .button {
+            margin-left: 10px;
+        }
+
+        .cardbox > img {
+            background-size: cover;
+        }
+
+        .cardbox > .cardbox-title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .button {
+            width: 40%;
+            height: 30px;
+            border-radius: 5px;
+            background-color: skyblue;
+            color: white;
+            font-weight: bold;
+            align-items: center;
+            text-align: center;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+                opacity: 0%;
+            }
+            100% {
+                transform: translate(0, -100px);
+                opacity: 100%;
+            }
+        }
+
+        @keyframes sphere-move {
+            0% {
+                transform: rotate(0);
+            }
+            100% {
+                transform: totate(100deg);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>My Card Collection</h1>
+    <p>transform · transition · tanimation 실습</p>
+
+    <div class="sphere1">
+        <div class="sphere2"></div>
+    </div>
+
+    <!-- 카드 메인 -->
+     <div class="card-table">
+        <div class="cardbox1">
+            <img src="https://placehold.co/250x200" alt="card image1">
+            <p class="cardbox-title">Card 1</p>
+            <p>카드에 대한 짧은 설명이 들어갑니다.</p>
+            <div class="button">자세히 보기</div>
+        </div>
+        <div class="cardbox2">
+            <img src="https://placehold.co/250x200" alt="card image2">
+            <p class="cardbox-title">Card 1</p>
+            <p>카드에 대한 짧은 설명이 들어갑니다.</p>
+            <div class="button">자세히 보기</div>
+        </div>
+        <div class="cardbox3">
+            <img src="https://placehold.co/250x200" alt="card image3">
+            <p class="cardbox-title">Card 1</p>
+            <p>카드에 대한 짧은 설명이 들어갑니다.</p>
+            <div class="button">자세히 보기</div>
+        </div>
+        <div class="cardbox4">
+            <img src="https://placehold.co/250x200" alt="card image4">
+            <p class="cardbox-title">Card 1</p>
+            <p>카드에 대한 짧은 설명이 들어갑니다.</p>
+            <div class="button">자세히 보기</div>
+        </div>
+     </div>
+</body>
+</html>

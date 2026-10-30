@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* transform : translate, rotate, skew, scale */
+        div {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .translate {
+            background-color: cyan;
+        }
+
+        .translate:hover {
+            transform: translate(30px, 30px);
+        }
+
+        .scale {
+            background-color: blue;
+        }
+
+        .scale:hover {
+            transform: scale(1.2);
+        }
+
+        .rotate {
+            background-color: red;
+            transform: rotate(45deg);
+        }
+
+        .skew {
+            background-color: black;
+            transform: skew(20deg, 10deg);
+        }
+        .transition {
+            background-color: red;
+            transition: all 0.5s 1s linear;
+        }
+
+        .transition:hover {
+            transform: translate(100px);
+            background-color: green;
+        }
+
+        .animation {
+            background-color: yellow;
+            /* animation: 2s 1s infinite alternate move; */
+            animation: 2s forwards move;
+        }
+
+        .animation:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0,0);
+            }
+            100% {
+                transform: translate(100px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- transform -->
+    <!-- transform : translate, rotate, skew, scale -->
+    <div class="translate">translate</div>
+    <div class="scale">scale</div>
+    <div class="rotate">rotate</div>
+    <div class="skew">skew</div>
+
+    <!-- transition -->
+    <h1>transition</h1>
+    <div class="transition">transition</div>
+    
+    <!-- animation -->
+    <h2>animation</h2>
+    <div class="animation"></div>
+</body>
+</html>
