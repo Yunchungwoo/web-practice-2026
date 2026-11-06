@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport width(화면 너비)는 디바이스의 너비를 쓰고 initial-scale은 초기 화면 비율은 1로 유지 기본. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 미디어 쿼리(media query) */
+        /* .test {
+            background-color: aqua;
+            color: red;
+            font-size: 40px;
+        }
+        @media screen and (max-width: 1439px) {
+            .test {
+                background-color: red;
+                color: aqua;
+            }
+        } 
+        @media screen and (max-width: 767px) {
+            .test {
+                background-color: yellow;
+                color: green;
+            }
+        } */
+        
+        /* 다크모드 */
+        /* .test {
+            background-color: #eee;
+            color: #222;
+            font-size: 40px;
+        }
+        @media (prefers-color-scheme: dark) {
+            .test {
+                background-color: #222;
+                color: #eee;
+                font-size: 40px;
+            }
+        } */
+
+        /* 다크모드 - CSS 변수 */
+        /* :root {
+            --bg: #eee;
+            --text: #000;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #000;
+                --text: #eee;
+            }
+        }
+        .var {
+            background-color: var(--bg);
+            color: var(--text);
+            font-size: 40px;
+        } */
+
+        /* 실무 UI 구현 - body flex layout */
+        /* * {
+            font-size: 40px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: green;
+        }
+
+        main {
+            background-color: red;
+            flex: 1;
+        }
+
+        footer {
+            background-color: yellow;
+        } */
+
+        /* 실무 UI 구현 - 반응형 카드 리스트 */
+        /* .card-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        @media (max-width: 1439px) {
+            .card-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 767px) {
+            .card-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .card-list li {
+            background-color: brown;
+            height: 200px;
+        } */
+
+        /* 실무 UI 구현 - PC, MO GNB 변경 + 햄버거 */
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            display: none;
+        }
+        @media screen and (max-width: 767px) {
+            button {
+                display: block;
+            }
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>속성에 직접 지정</h1>
+    <div class="test">
+        test
+    </div>
+
+    <h1>CSS 변수</h1>
+    <div class="var">
+        var
+    </div> -->
+
+<!-- 
+    <header>
+        header
+    </header>
+    <main>
+        main
+    </main>
+    <footer>
+        footer
+    </footer> -->
+
+    <!-- <ul class="card-list">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul> -->
+
+    <!-- <header>
+        <h1>logo</h1>
+        <button>메뉴버튼</button>
+        <nav>
+            <ul>
+                <li>메뉴1</li>
+                <li>메뉴2</li>
+                <li>메뉴3</li>
+                <li>메뉴4</li>
+            </ul>
+        </nav>
+    </header> -->
+</body>
+</html>
