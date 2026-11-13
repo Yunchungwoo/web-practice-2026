@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* 콤보박스 - 옵션목록(position)*/
+        /* .combo {
+            position: relative;
+            width: 200px;
+        }
+
+        .combo_btn {
+            padding-inline: 10px 12px;
+            border: 1px solid #ccc;
+        }
+
+        .combo_list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            border: 1px solid #cbd5e1;
+            z-index: 10;
+        }
+
+        .combo_list:hover {
+            background: #e0f2fe;
+        } */
+
+        /* .modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, .6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .modal_box {
+            position: relative;
+            width: 90%;
+            max-width: 480px;
+            padding: 36px;
+            background: #fff;
+            border-radius: 16px;
+        }
+
+        .button {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+        } */
+
+        .button {
+            width: 200px;
+            padding: 10px 12px;
+            background-color: blue;
+            color: #fff;
+            border: none;
+        }
+
+        .button:hover {
+            background-color: aqua;
+            color: #000;
+        }
+
+        .button:active {
+            background-color: aqua;
+            color: #000;
+        }
+
+        .button:disabled {
+            background-color: gray;
+            color: #eee;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="combo">
+        <div class="combo_btn">선택하세요</div>
+        <ul class="combo_list">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div> -->
+
+    <!-- <div class="modal">
+        <div class="modal_box">
+            <button class="button">닫기</button>
+            <h2>모달 제목</h2>
+            <p>모달 내용</p>
+        </div>
+    </div> -->
+    
+    <button class="button">클릭</button>
+    <button class="button" disabled></button>
+</body>
+</html>
